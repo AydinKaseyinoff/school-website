@@ -4,9 +4,25 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Navigation from "./Navigation";
 
+const studentsData = {
+  0: ["Иванов", "Петров", "Сидоров"],
+  1: ["Смирнова", "Иванова", "Кузнецова"],
+  2: ["Козлов", "Лебедев", "Новиков"],
+  3: ["Морозова", "Новикова", "Орлова"],
+  4: ["Борисов", "Куликов", "Поляков"],
+  5: ["Киселев", "Макаров", "Федоров"],
+  6: ["Маркова", "Семенова", "Григорьева"],
+  7: ["Карпов", "Артемьев", "Гусев"],
+  8: ["Воробьева", "Лазарева", "Тимофеева"],
+  9: ["Степанов", "Савельев", "Тихонов"],
+  10: ["Андреев", "Михайлов", "Алексеев"],
+  11: ["Абдымуратов Жаныбек", "Уланова Айзада", "Абдраимова Каныкей", "Акылбекова Азиза", "Жунушалиев Байель", "Касейинов Айдин"],
+};
+
 const ClassesPage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState(null);
+  const [students, setStudents] = useState([]);
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -18,6 +34,7 @@ const ClassesPage = () => {
 
   const handleClassSelect = (classNumber) => {
     setSelectedClass(classNumber);
+    setStudents(studentsData[classNumber]);
     setModalIsOpen(false);
   };
 
@@ -56,7 +73,16 @@ const ClassesPage = () => {
         <button onClick={() => handleClassSelect(11)} className="set_class">11</button>
         <button onClick={closeModal}>Отмена</button>
       </Modal>
-      {selectedClass !== null && <p>Вы выбрали класс: {selectedClass}</p>}
+      {selectedClass !== null && (
+        <div>
+          <h2>Список учеников {selectedClass} класса:</h2>
+          <ul>
+            {students.map((student, index) => (
+              <li key={index}>{student}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
