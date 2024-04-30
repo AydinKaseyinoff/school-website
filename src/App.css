@@ -48,16 +48,19 @@ h2 {
   background-color: #45a049;
 }
 
+/* Навигация */
 .nav {
   display: flex;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+  justify-content: center; /* Добавлено для центрирования на мобильных устройствах */
 }
 .nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0; /* Убрано отступы по умолчанию */
 }
-.header ul {
-  display: flex;
-}
+
+/* Модальное окно */
 .ReactModal__Content--after-open {
-  inset: 160px;
+  inset: 160px; /* Пример адаптивного значения для модального окна */
 }
