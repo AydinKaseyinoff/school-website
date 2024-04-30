@@ -1,8 +1,8 @@
 // src/components/HomePage.js
 
 import React from "react";
-import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
+import SchoolMap from "./SchoolMap";
 
 const HomePage = () => {
   return (
@@ -26,11 +26,8 @@ const HomePage = () => {
           <p>Здесь будет календарь событий школы.</p>
         </section>
         <section>
-          <h2>Выбор класса</h2>
-          <p>Нажмите на кнопку ниже, чтобы выбрать класс.</p>
-          <Link to="/classes" className="set_class">
-            Выбрать класс
-          </Link>
+          <h2>Вы можете нас найти👇</h2>
+          <SchoolMap />
         </section>
       </main>
     </div>

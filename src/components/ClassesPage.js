@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Navigation from "./Navigation";
+import SchoolMap from "./SchoolMap";
 
 const studentsData = {
   0: ["Иванов", "Петров", "Сидоров"],
@@ -50,6 +51,7 @@ const ClassesPage = () => {
         </ul>
       </header>
       <h1>Выберите класс</h1>
+         <SchoolMap />
       <button className="set_class" onClick={openModal}>
         Выбрать класс
       </button>
