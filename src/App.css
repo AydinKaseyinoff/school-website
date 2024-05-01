@@ -58,6 +58,7 @@ h2 {
 .nav ul {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   padding: 0; /* Убрано отступы по умолчанию */
 }
 
