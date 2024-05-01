@@ -7,11 +7,18 @@ const Navigation = () => {
   return (
     <nav className="nav">
       <ul>
+        <h1 className="logo">Аден Истамбеков</h1>
+      </ul>
+      <ul>
         <li>
-          <Link to="/" className="set_class">Главная</Link>
+          <Link to="/" className="set_class">
+            Главная
+          </Link>
         </li>
         <li>
-          <Link to="/classes" className="set_class">Выбор класса</Link>
+          <Link to="/classes" className="set_class">
+            Выбор класса
+          </Link>
         </li>
       </ul>
     </nav>
