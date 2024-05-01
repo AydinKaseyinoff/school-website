@@ -76,3 +76,9 @@ h2 {
 .logo {
   font-size: 40px;
 }
+.ul-nav {
+  margin-right: 20px;
+}
+.gallery-images img{
+  width: 100%;
+}
