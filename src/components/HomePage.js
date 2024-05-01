@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "./Navigation";
-import SchoolMap from "./SchoolMap";
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
