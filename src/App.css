@@ -83,3 +83,10 @@ h2 {
 .gallery-images img{
   width: 100%;
 }
+.calendar-page {
+  display: -webkit-inline-box;
+  flex-wrap: wrap;
+}
+.calendar {
+  width: 50%;
+}

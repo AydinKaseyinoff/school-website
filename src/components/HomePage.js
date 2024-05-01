@@ -34,14 +34,14 @@ const HomePage = () => {
           <h2>Новости и объявления</h2>
           <p>Здесь будут новости и объявления школы.</p>
         </section>
-        <section>
+        <section className="calendar-page">
           <h2>Календарь событий</h2>
-          <Calendar
+          <Calendar className="calendar"
             localizer={localizer}
             events={events}
             startAccessor="start"
             endAccessor="end"
-            style={{ height: 500 }}
+            style={{ height: 500}}
           />
         </section>
       </main>
