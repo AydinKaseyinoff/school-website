@@ -64,3 +64,11 @@ h2 {
 .ReactModal__Content--after-open {
   inset: 160px; /* Пример адаптивного значения для модального окна */
 }
+.list-class li {
+  list-style-type: decimal;
+}
+.list-class ul {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
