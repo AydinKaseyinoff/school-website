@@ -52,7 +52,8 @@ h2 {
 .nav {
   display: flex;
   flex-wrap: wrap; /* Добавлено для адаптивности */
-  justify-content: center; /* Добавлено для центрирования на мобильных устройствах */
+  justify-content: space-around; /* Добавлено для центрирования на мобильных устройствах */
+  align-items: center;
 }
 .nav ul {
   display: flex;
@@ -71,4 +72,7 @@ h2 {
   width: 50%;
   text-align: center;
   display: inline-block;
+}
+.logo {
+  font-size: 40px;
 }
