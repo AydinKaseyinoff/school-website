@@ -1,24 +1,26 @@
 import React from "react";
 import Navigation from "./Navigation";
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+import SchoolMap from "./SchoolMap";
 import moment from 'moment';
-
-const localizer = momentLocalizer(moment);
+import "./HomePage.css"; // Импортируем файл со стилями
 
 const events = [
   {
     title: 'Родительское собрание',
-    start: new Date(2024, 4, 15, 10, 0), // Год, месяц (0-11), день, час, минуты
-    end: new Date(2024, 4, 15, 12, 0),
+    date: '2024-05-15',
+    time: '10:00',
   },
   {
     title: 'Выходной',
-    start: new Date(2024, 4, 17),
-    end: new Date(2024, 4, 17),
+    date: '2024-05-17',
+    time: null,
   },
   // Добавьте другие события по мере необходимости
 ];
+
+const formatDate = (date) => {
+  return moment(date).format('MMMM D, YYYY');
+};
 
 const HomePage = () => {
   return (
@@ -33,15 +35,17 @@ const HomePage = () => {
           <h2>Новости и объявления</h2>
           <p>Здесь будут новости и объявления школы.</p>
         </section>
-        <section className="calendar-page">
+        <section>
           <h2>Календарь событий</h2>
-          <Calendar className="calendar"
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            style={{ height: 500}}
-          />
+          <div className="calendar">
+            {events.map((event, index) => (
+              <div key={index} className="event">
+                <div className="date">{formatDate(event.date)}</div>
+                <div className="title">{event.title}</div>
+                {event.time && <div className="time">{event.time}</div>}
+              </div>
+            ))}
+          </div>
         </section>
       </main>
     </div>
@@ -49,3 +53,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

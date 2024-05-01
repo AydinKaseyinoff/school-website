@@ -1,0 +1,32 @@
+/* src/components/HomePage.css */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .event {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .title {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .time {
+    font-size: 14px;
+    color: #888;
+  }
+  
