@@ -4,6 +4,7 @@ import "./App.css";
 import HomePage from "./components/HomePage";
 import ClassesPage from "./components/ClassesPage";
 import Gallery from "./components/Gallery"; // импорт Gallery компонента
+import SchoolMap from "./components/SchoolMap";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/classes" element={<ClassesPage />} />
-          <Route path="/gallery" element={<Gallery />} /> {/* отображение Gallery компонента */}
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/map" element={<SchoolMap />} />
+           {/* отображение Gallery компонента */}
         </Routes>
       </Router>
     </div>
