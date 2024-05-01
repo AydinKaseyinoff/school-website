@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "./Navigation";
-import SchoolMap from "./SchoolMap";
 import moment from 'moment';
 import "./HomePage.css"; // Импортируем файл со стилями
 
