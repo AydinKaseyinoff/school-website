@@ -24,6 +24,11 @@ const Navigation = () => {
             Галерея школы
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/map" className="set_class" activeClassName="active">
+            О нас
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
