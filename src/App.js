@@ -1,22 +1,23 @@
-// src/App.js
-
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // заменим Route на Routes
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import ClassesPage from "./components/ClassesPage";
+import Gallery from "./components/Gallery"; // импорт Gallery компонента
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Routes> {/* заменим Route на Routes */}
+        <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/classes" element={<ClassesPage />} />
-        </Routes> {/* заменим Route на Routes */}
+          <Route path="/gallery" element={<Gallery />} /> {/* отображение Gallery компонента */}
+        </Routes>
       </Router>
     </div>
   );
 }
 
 export default App;
+
