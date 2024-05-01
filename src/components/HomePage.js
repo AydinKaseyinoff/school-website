@@ -9,10 +9,6 @@ const HomePage = () => {
     <div>
       <header className="header">
         <ul>
-          <h1>Добро пожаловать в нашу школу</h1>
-          <h1>Адена Истамбекова</h1>
-        </ul>
-        <ul>
             <Navigation />
         </ul>
       </header>
