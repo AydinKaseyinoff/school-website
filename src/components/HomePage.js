@@ -23,7 +23,6 @@ const HomePage = () => {
         </section>
         <section>
           <h2>Вы можете нас найти👇</h2>
-          <SchoolMap />
         </section>
       </main>
     </div>
