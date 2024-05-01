@@ -1,7 +1,5 @@
-// src/components/Navigation.js
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -10,15 +8,21 @@ const Navigation = () => {
         <h1 className="logo">Аден Истамбеков</h1>
       </ul>
       <ul>
-        <li>
-          <Link to="/" className="set_class">
+        <li className="ul-nav">
+          <NavLink exact to="/" className="set_class" activeClassName="active">
             Главная
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/classes" className="set_class">
+          <NavLink to="/classes" className="set_class" activeClassName="active">
             Выбор класса
-          </Link>
+          </NavLink>
+        </li>
+        {/* Добавляем кнопку для открытия галереи школы */}
+        <li>
+          <NavLink to="/gallery" className="set_class" activeClassName="active">
+            Галерея школы
+          </NavLink>
         </li>
       </ul>
     </nav>
