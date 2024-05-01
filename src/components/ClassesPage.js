@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Navigation from "./Navigation";
-import SchoolMap from "./SchoolMap";
 
 const studentsData = {
   0: ["Иванов", "Петров", "Сидоров"],
@@ -17,7 +16,7 @@ const studentsData = {
   8: ["Воробьева", "Лазарева", "Тимофеева"],
   9: ["Степанов", "Савельев", "Тихонов"],
   10: ["Андреев", "Михайлов", "Алексеев"],
-  11: ["Абдымуратов Жаныбек", "Уланова Айзада", "Абдраимова Каныкей", "Акылбекова Азиза", "Жунушалиев Байель", "Касейинов Айдин"],
+  11: ["Абдымуратов Жаныбек", "Уланова Айзада", "Абдраимова Каныкей","Алмабеков Эржигит","Акылбекова Азиза", "Жунушалиев Байель","Сыргаков Арсен","Касейинов Айдин", "Мукашева Малика","Кулбаракова Айдана","Мундузова Айдана","Турдубекова Жаркын","Кутманова Нурзада","Чокотаева Байель","Омурзаков Мадияр","Урматбеков Алмаз","Эмилбаев Байель","Русланов Актан","Толонова Нуркыз"],
 };
 
 const ClassesPage = () => {
@@ -51,7 +50,6 @@ const ClassesPage = () => {
         </ul>
       </header>
       <h1>Выберите класс</h1>
-         <SchoolMap />
       <button className="set_class" onClick={openModal}>
         Выбрать класс
       </button>
@@ -76,7 +74,7 @@ const ClassesPage = () => {
         <button onClick={closeModal}>Отмена</button>
       </Modal>
       {selectedClass !== null && (
-        <div>
+        <div className="list-class">
           <h2>Список учеников {selectedClass} класса:</h2>
           <ul>
             {students.map((student, index) => (
