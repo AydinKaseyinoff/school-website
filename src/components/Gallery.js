@@ -4,6 +4,7 @@ import image1 from "./img/image1.jpg";
 import image2 from "./img/image2.jpg";
 import image3 from "./img/image3.jpg";
 import image4 from "./img/image4.jpg";
+import Footer from "./Footer";
 
 const Gallery = () => {
   return (
@@ -22,6 +23,7 @@ const Gallery = () => {
         <img src={image4} alt="Мое изображение" />
         {/* Дополнительные изображения */}
       </div>
+      <Footer />
     </div>
   );
 };
