@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import ClassesPage from "./components/ClassesPage";
-import Gallery from "./components/Gallery"; // импорт Gallery компонента
-import SchoolMap from "./components/SchoolMap";
+import Gallery from "./components/Gallery";
+import TeachersPage from "./components/TeachersPage"; // Импортируем TeachersPage компонент
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/classes" element={<ClassesPage />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/map" element={<SchoolMap />} />
-           {/* отображение Gallery компонента */}
+          <Route path="/teacher" element={<TeachersPage />} />
+          {/* Отображение TeachersPage компонента */}
         </Routes>
       </Router>
     </div>
