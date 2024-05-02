@@ -25,8 +25,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/map" className="set_class" activeClassName="active">
-            О нас
+          <NavLink to="/teacher" className="set_class" activeClassName="active">
+            Учителя
           </NavLink>
         </li>
       </ul>
