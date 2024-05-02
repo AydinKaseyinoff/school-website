@@ -76,6 +76,8 @@ h2 {
 }
 .logo {
   font-size: 40px;
+  display: flex;
+  align-items: center;
 }
 .ul-nav {
   margin-right: 20px;

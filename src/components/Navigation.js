@@ -1,11 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "./img/logo.jpg";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
     <nav className="nav">
       <ul>
-        <h1 className="logo">Аден Истамбеков</h1>
+        <h1 className="logo">
+          <img src={logo} alt="Мое изображение" />
+          <h1>
+            Аден Истамбеков
+          </h1>
+        </h1>
       </ul>
       <ul>
         <li className="ul-nav">
