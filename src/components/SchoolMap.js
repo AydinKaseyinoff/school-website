@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const SchoolMap = () => {
   return (
@@ -20,6 +21,7 @@ const SchoolMap = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
+    <Footer />
     </div>
   );
 };
