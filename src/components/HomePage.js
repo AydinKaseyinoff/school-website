@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import moment from 'moment';
 import "./HomePage.css"; // Импортируем файл со стилями
+import Footer from "./Footer";
 
 const events = [
   {
@@ -46,6 +47,7 @@ const HomePage = () => {
             ))}
           </div>
         </section>
+        <Footer />
       </main>
     </div>
   );
