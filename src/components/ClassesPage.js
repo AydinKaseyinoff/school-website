@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const studentsData = {
   0: ["Иванов", "Петров", "Сидоров"],
@@ -79,6 +80,7 @@ const ClassesPage = () => {
           </ul>
         </div>
       )}
+      <Footer />
     </div>
   );
 };
