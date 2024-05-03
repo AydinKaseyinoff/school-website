@@ -8,7 +8,11 @@ const Footer = () => {
         <p>Контактная информация:</p>
         <ul>
           <li>Email: aidin090407@icloud.com</li>
-          <li>Телефон: +996701018312</li>
+          <li>
+            <a href="tel:+996701018312">
+              Телефон: +996701018312
+            </a>
+          </li>
           <li>Адрес: Улица, Ичке-Жергез, Страна: Кыргызстан</li>
           <li className="autor">Aden Istambekov Copyright © 2024 Aden Istambekov - All rights reserved || Designed By: KASEINOV</li>
         </ul>

@@ -15,6 +15,10 @@
   margin: 0 auto;
 }
 
+.footer-content a {
+  color: #fff;
+}
+
 .footer-content p {
   margin-bottom: 10px;
 }
@@ -29,5 +33,20 @@
 }
 .autor {
     margin-top: 20px;
-    color: #00000070;
+    color: #ff8f00;
+}
+
+.footer-content a {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
