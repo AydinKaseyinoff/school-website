@@ -2,6 +2,7 @@
 
 .calendar {
     display: grid;
+    width: 100%;
   }
   
   .event {
