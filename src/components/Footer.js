@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Контактная информация:</p>
         <ul>
           <li>
-            <a href="whatsapp://send?phone=+996701018312">Отправить сообщение в WhatsApp</a>
+            <a href="whatsapp://send?phone=996701018312">Отправить сообщение в WhatsApp</a>
           </li>
           <li>
             <a href="tel:+996701018312">
