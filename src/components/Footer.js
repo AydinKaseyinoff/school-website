@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="footer-content">
         <p>Контактная информация:</p>
         <ul>
-          <li>Email: aidin090407@icloud.com</li>
+          <li>
+            <a href="whatsapp://send?phone=+996701018312">Отправить сообщение в WhatsApp</a>
+          </li>
           <li>
             <a href="tel:+996701018312">
               Телефон: +996701018312
