@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navigation from "./Navigation";
 import moment from 'moment';
 import "./HomePage.css"; // Импортируем файл со стилями
@@ -10,32 +12,7 @@ const events = [
     date: '2024-05-1',
     time: '10:00',
   },
-  {
-    title: 'Майские праздники',
-    date: '2024-05-2',
-    time: '10:00',
-  },
-  {
-    title: 'Майские праздники',
-    date: '2024-05-3',
-    time: '10:00',
-  },
-  {
-    title: 'Майские праздники',
-    date: '2024-05-4',
-    time: '10:00',
-  },
-  {
-    title: 'Майские праздники',
-    date: '2024-05-5',
-    time: '10:00',
-  },
-  {
-    title: 'Линейка',
-    date: '2024-05-17',
-    time: null,
-  },
-  // Добавьте другие события по мере необходимости
+  // Другие события...
 ];
 
 const formatDate = (date) => {
@@ -43,11 +20,16 @@ const formatDate = (date) => {
 };
 
 const HomePage = () => {
+  // Показываем всплывающее уведомление при загрузке страницы
+  useEffect(() => {
+    toast.info("Добро пожаловать на наш сайт!");
+  }, []);
+
   return (
     <div>
       <header className="header">
         <ul>
-            <Navigation />
+          <Navigation />
         </ul>
       </header>
       <main>
@@ -69,9 +51,11 @@ const HomePage = () => {
         </section>
         <Footer />
       </main>
+      <ToastContainer /> {/* Контейнер для всплывающих уведомлений */}
     </div>
   );
 };
 
 export default HomePage;
+
 
