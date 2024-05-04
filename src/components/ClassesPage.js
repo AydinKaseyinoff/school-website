@@ -40,8 +40,17 @@ const ClassesPage = () => {
     setSelectedClass(classNumber);
     setStudents(studentsData[classNumber]);
     setModalIsOpen(false);
-    toast.info(`Выбран класс ${classNumber}`);
+    toast.info(`Выбран класс ${classNumber}`); // 60000 миллисекунд = 1 минута
+    toast.info(
+      <div>
+        <span>Класстын списогу жок болсо жиберип койсонор</span>
+        <a className="set_class" href="whatsapp://send?phone=996701018312">Отправить сообщение в WhatsApp</a>
+      </div>,
+      { autoClose: 60000 }
+    );
+    
   };
+
   
 
   return (
