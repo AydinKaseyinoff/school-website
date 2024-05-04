@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const studentsData = {
   0: ["Иванов", "Петров", "Сидоров"],
@@ -37,7 +40,9 @@ const ClassesPage = () => {
     setSelectedClass(classNumber);
     setStudents(studentsData[classNumber]);
     setModalIsOpen(false);
+    toast.info(`Выбран класс ${classNumber}`);
   };
+  
 
   return (
     <div>
@@ -80,6 +85,7 @@ const ClassesPage = () => {
           </ul>
         </div>
       )}
+      <ToastContainer />
       <Footer />
     </div>
   );
