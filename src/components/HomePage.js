@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import moment from 'moment';
 import "./HomePage.css"; // Импортируем файл со стилями
 import Footer from "./Footer";
+import ClassesPage from "./ClassesPage";
 
 const events = [
   {
@@ -30,6 +31,7 @@ const HomePage = () => {
       <header className="header">
         <ul>
           <Navigation />
+          <ClassesPage />
         </ul>
       </header>
       <main>

@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./img/logo.jpg";
 import "./Navigation.css";
+import SignInWithGoogle from "./SignInWithGoogle";
 
 const Navigation = () => {
   return (
@@ -35,6 +36,9 @@ const Navigation = () => {
           <NavLink to="/teacher" className="set_class" activeClassName="active">
             Учителя
           </NavLink>
+        </li>
+        <li>
+          <SignInWithGoogle />
         </li>
       </ul>
     </nav>
